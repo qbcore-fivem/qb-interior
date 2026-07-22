@@ -55,13 +55,13 @@ end)
 -- Starting Apartment
 
 exports('CreateApartmentFurnished', function(spawn)
-    local exit = json.decode('{"x": 1.5, "y": -10.0, "z": 0, "h":358.50}')
-    local model = 'furnitured_midapart'
+    local exit = json.decode('{"x": 4.98, "y": 4.3, "z": 0, "h":358.50}')
+    local model = 'modernhotel_shell'
     local obj = CreateShell(spawn, exit, model)
     if obj and obj[2] then
-        obj[2].clothes = json.decode('{"x": -6.028, "y": -9.5, "z": 1.2, "h":2.263}')
-        obj[2].stash = json.decode('{"x": -7.305, "y": -3.922, "z": 0.5, "h":2.263}')
-        obj[2].logout = json.decode('{"x": -0.8, "y": 1.0, "z": 1.0, "h":2.263}')
+        obj[2].clothes = json.decode('{"x": -3.03, "y": 3.72, "z": 1.2, "h":2.263}')
+        obj[2].stash = json.decode('{"x": 1.41, "y": 3.49, "z": 0.5, "h":2.263}')
+        obj[2].logout = json.decode('{"x": 5.35, "y": 1.42, "z": 1.0, "h":2.263}')
     end
     if IsNew then
         SetTimeout(750, function()
