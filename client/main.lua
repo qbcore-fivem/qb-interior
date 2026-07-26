@@ -55,7 +55,7 @@ end)
 -- Starting Apartment
 
 exports('CreateApartmentFurnished', function(spawn)
-    local exit = json.decode('{"x": 4.98, "y": 4.3, "z": 0, "h":358.50}')
+    local exit = json.decode('{"x": 4.98, "y": 4.35, "z": 1.16, "h": 179.79}')
     local model = 'modernhotel_shell'
     local obj = CreateShell(spawn, exit, model)
     if obj and obj[2] then
